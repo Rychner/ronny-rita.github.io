@@ -18,7 +18,7 @@ if (music) {
 function mulai()
 {
 	// back to top
-	window.scrollTo(0, 0)
+	window.scrollTo(0, 20)
 
 	var audioDoor = document.getElementById('doorSound')
 	audioDoor.play()
@@ -69,7 +69,7 @@ function toggleMusic(event)
 }
 
 // date counter
-var countDownDate = new Date("Jan 13, 2024 09:00:00").getTime()
+var countDownDate = new Date("Apr 26, 2025 14:00:00").getTime()
 
 var x = setInterval(function() {
 	var now = new Date().getTime()
