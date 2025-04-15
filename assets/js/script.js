@@ -57,7 +57,7 @@ function toggleMusic(event)
 	if (isPlaying) {
 		musicButton.innerHTML = '<i class="fas fa-fw fa-pause"></i>'
 		musicButton.classList.remove('rotate')
-		musicButton.style.transform = 'translateY(0)'
+		musicButton.style.transform = 'translateY(10px)'
 		audioElement.pause()
 	} else {
 		musicButton.innerHTML = '<i class="fas fa-fw fa-compact-disc"></i>'
