@@ -112,7 +112,7 @@ body.transition {
 	right: 0;
 	list-style-type: none;
 	display: flex;
-	background-color: var(--pink);
+	background-color: goldenrod;
 	height: 50px;
 	z-index: 1;
 }
@@ -288,11 +288,11 @@ body.transition {
 	border-radius: 4px;
 	transition: 0.5s;
 	color: var(--white);
-	background: var(--pink);
+	background: gold;
 }
 
 .btn-pink:hover {
-	background: var(--pink-hover);
+	background: goldenrod;
 	color: var(--white);
 }
 
