@@ -142,7 +142,7 @@ body.transition {
 .nav li a.nav-item-music {
 	transform: translateY(0);
 	font-size: 30px;
-	top: 0px;
+	top: -10px;
 	transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -543,7 +543,7 @@ body.transition {
 
 	.nav li a.nav-item-music {
 		font-size: 40px;
-		top: -25px;
+		top: -12px;
 	}
 
 	.nav .nav-music {
