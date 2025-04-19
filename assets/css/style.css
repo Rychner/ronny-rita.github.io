@@ -20,6 +20,10 @@ html {
 	font-family: 'Work Sans', sans-serif;
 }
 
+body {
+	overflow-y: auto;
+}
+
 body.transition {
 	animation: fadeInAnimation ease 2s;
 	animation-iteration-count: 1;
@@ -211,6 +215,51 @@ body.transition {
 }
 
 #hero-section .btn-get-started:hover {
+	background: goldenrod;
+	color: var(--white);
+}
+
+#cover-section h1 {
+	font-size: 64px;
+}
+
+#cover-section::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: rgba(241, 78, 149, 0.4);
+}
+
+#cover-section {
+	width: 100%;
+	height: 100vh;
+	background: url("../img/AAA08166.JPG") top left;
+	background-size: cover;
+	position: relative;
+	background-position: center;
+	z-index: 2;
+}
+
+#cover-section .container {
+	position: relative;
+}
+
+#cover-section .btn-get-started {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+	letter-spacing: 1px;
+	display: inline-block;
+	padding: 10px 28px;
+	transition: 0.5s;
+	color: gold;
+	background: var(--white);
+}
+
+#cover-section .btn-get-started:hover {
 	background: goldenrod;
 	color: var(--white);
 }

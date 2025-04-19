@@ -15,18 +15,39 @@ if (music) {
 }
 
 
-function openFullscreen() 
-{
+function openFullscreen() {
+	// Hide hero
+	const hero = document.getElementById('hero-section');
+	if (hero) hero.style.display = 'none';
+  
+	// Show cover
+	const cover = document.getElementById('cover-section');
+	if (cover) cover.style.display = 'block';
+  
+	// Request fullscreen
 	const elem = document.documentElement;
-
 	if (elem.requestFullscreen) {
-		elem.requestFullscreen();
-	} else if (elem.webkitRequestFullscreen) { // Safari
-		elem.webkitRequestFullscreen();
-	} else if (elem.msRequestFullscreen) { // IE11
-		elem.msRequestFullscreen();
+	  elem.requestFullscreen();
+	} else if (elem.webkitRequestFullscreen) {
+	  elem.webkitRequestFullscreen();
+	} else if (elem.msRequestFullscreen) {
+	  elem.msRequestFullscreen();
 	}
-}
+	hero.remove();
+  
+	// After 3 seconds, show pembuka
+	setTimeout(function () {
+	  if (cover) cover.style.display = 'none';
+  
+	  const pembuka = document.getElementById('pembuka-section');
+	  if (pembuka) {
+		pembuka.style.display = 'block';
+		// Optional: scroll to it if it's down the page
+		pembuka.scrollIntoView({ behavior: "smooth" });
+	  }
+	}, 3000);
+  }
+  
 
 // door mulai
 function mulai()
