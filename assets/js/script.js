@@ -45,7 +45,7 @@ function openFullscreen() {
 		// Optional: scroll to it if it's down the page
 		pembuka.scrollIntoView({ behavior: "smooth" });
 	  }
-	}, 3000);
+	}, 5000);
   }
   
 
